@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:reel_cart/Screens/explore_screen.dart';
 import 'package:reel_cart/Screens/profile_screen.dart';
 import 'package:reel_cart/Screens/reels_screen.dart';
+import 'package:reel_cart/Screens/cart_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _screens = [
     const ExploreScreen(),
     const ReelsScreen(),
+    const CartScreen(),
     const ProfileScreen(),
   ];
 
@@ -70,6 +72,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.play_circle_outline),
             label: 'Reels',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart_outlined),
+            label: 'Cart',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
