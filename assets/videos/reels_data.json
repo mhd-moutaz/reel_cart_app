@@ -1,0 +1,29 @@
+[
+  {
+    "videoPath": "assets/videos/video.mp4",
+    "title": "Premium Product",
+    "description": "Discover amazing features and quality in this stunning product showcase",
+    "price": "$99.99",
+    "likes": 1234,
+    "liked": false,
+    "color": "0xFF3B82F6"
+  },
+  {
+    "videoPath": "assets/videos/video.mp4",
+    "title": "Trending Now",
+    "description": "The most popular item this season - don't miss out on this exclusive deal",
+    "price": "$149.99",
+    "likes": 2567,
+    "liked": true,
+    "color": "0xFF8B5CF6"
+  },
+  {
+    "videoPath": "assets/videos/video.mp4",
+    "title": "Limited Edition",
+    "description": "Exclusive collection available for a limited time only",
+    "price": "$199.99",
+    "likes": 3421,
+    "liked": false,
+    "color": "0xFF10B981"
+  }
+]
