@@ -61,12 +61,15 @@ class _MainScreenState extends State<MainScreen> {
         border: Border(top: BorderSide(color: Colors.white.withOpacity(0.05))),
       ),
       child: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.transparent,
         elevation: 0,
         selectedItemColor: const Color(0xFF3B82F6),
         unselectedItemColor: const Color(0xFF94A3B8),
         currentIndex: _currentIndex,
         onTap: _onItemTapped,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
           BottomNavigationBarItem(
