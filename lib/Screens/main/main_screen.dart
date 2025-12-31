@@ -4,6 +4,8 @@ import 'package:reel_cart/Screens/explore_screen.dart';
 import 'package:reel_cart/Screens/profile_screen.dart';
 import 'package:reel_cart/Screens/reels_screen.dart';
 import 'package:reel_cart/Screens/cart_screen.dart';
+import 'package:reel_cart/Screens/add_product_screen.dart';
+import 'package:reel_cart/Screens/vendor_profile_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -19,8 +21,10 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _screens = [
     const ExploreScreen(),
     const ReelsScreen(),
+    const AddProductScreen(),
     const CartScreen(),
     const ProfileScreen(),
+    const VendorProfileScreen(),
   ];
 
   @override
@@ -77,12 +81,20 @@ class _MainScreenState extends State<MainScreen> {
             label: 'Reels',
           ),
           BottomNavigationBarItem(
+            icon: Icon(Icons.add_circle),
+            label: 'Add Product',
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart_outlined),
             label: 'Cart',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
             label: 'Profile',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.store_rounded),
+            label: 'Store',
           ),
         ],
       ),

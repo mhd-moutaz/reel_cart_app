@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:reel_cart/Screens/add_product_screen.dart';
 import 'package:reel_cart/screens/login_screen.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class ReelCartApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      // home: AddProductScreen(),
       home: LoginScreen(),
     );
   }
